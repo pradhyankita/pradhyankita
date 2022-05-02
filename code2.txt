@@ -1,0 +1,203 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ mkdir Rose
+(***make a new directory named Rose***)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls 
+(*****Rose named directory can be seen in the listed files and folders****)
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  Rose/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ rm -r Rose
+(***Rose named directory is removed****)
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ mkdir -p Bash/bash
+(***created a nested Directory Bash inside which there is bash folder***)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+(****we can see the Bash directory here****)
+abc.txt  Assignment1/  Bash/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ rm -r Bash
+(***Removing the nested directory implicitly***)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+(*** we can see the Bash folder is removed with all the items in it****)
+abc.txt       def.txt     QuickLinks/  Temp/
+Assignment1/  hello.java  script1.sh
+CopyFiles.sh  Practise/   Shell/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ echo $HOME
+((****writing HOME  variable to standard output using echo*****)
+/c/Users/rapen
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ echo $SHELL
+((****writing SHELL variable to standard output using echo*****)
+/usr/bin/bash
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ du -sh Assignment1/
+(****Displaying disk usage in human readable form for Assignment1 folder***)
+8.0K    Assignment1/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ du -sm Assignment1/
+(****piping disk usage in readable form for Assignment1 folder****)
+
+1       Assignment1/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ du -sm * | sort -nr
+(***piping disk usage of current folder to sort in descending order ***)
+1       Temp
+1       Shell
+1       script1.sh
+1       Practise
+1       hello.java
+1       CopyFiles.sh
+1       Assignment1
+0       QuickLinks
+0       def.txt
+0       abc.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ du -sm * | sort -n
+(****piping disk usage in ascending order sorting in numeric value ****)
+0       abc.txt
+0       def.txt
+0       QuickLinks
+1       Assignment1
+1       CopyFiles.sh
+1       hello.java
+1       Practise
+1       script1.sh
+1       Shell
+1       Temp
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ find ~/Assignment1 -name code.txt
+(***finding Assignment1 in the list ****)
+find: ‘/c/Users/rapen/Assignment1’: No such file or directory
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ cd Assignment1
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ ls
+code.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ find . -type f -empty
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ cd -
+/c/Users/rapen/OneDrive/Desktop/shell_script
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ find . -type f -empty
+(***finding the empty files in the current folder****)
+./abc.txt
+./def.txt
+./Practise/a.pdf
+./Practise/ab.txt
+./Practise/cd.txt
+./Practise/copied.txt
+./Practise/moved.txt
+./Shell/a.txt
+./Shell/b.txt
+./Temp/test
+./Temp/test1
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ nano -T 3 Hello.java
+(***using nano editor to dreate Hello.java****)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+abc.txt       def.txt     QuickLinks/  Temp/
+Assignment1/  hello.java  script1.sh
+CopyFiles.sh  Practise/   Shell/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ nano hello.java
+(***using nano editor to create Hello.java****)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java
+(****running java program***)
+
+Hello World
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+(****running java program in background***)
+
+[1] 2067
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+(***viewing the jobs running in the background***)
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ bg %1
+(***to check whether job 1 is running in background or not***)
+bash: bg: job 1 already in background
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+(***job 2 running in the background with process id 2083**)
+[2] 2083
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]-  Running                 java hello.java &
+[2]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ kill %2
+(***killing job 2 as we no longer need it***)
+[2]+  Terminated              java hello.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+[1] 2114
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ps -elf | grep java |grep -v grep
+(***grepping the java process***)
+   rapen    2114    1944 cons0    09:12:39 /c/Program Files/Common Files/Oracle/Java/javapath/java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ killall java
+(****killing all jobs which are of java***)
+bash: killall: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+kill %1
+(***killig the job 1****)
+[1]+  Terminated              java hello.java

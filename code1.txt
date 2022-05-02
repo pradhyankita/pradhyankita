@@ -1,0 +1,261 @@
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java -version   
+(***Checks the Version of java installed in OS***)
+java version "18.0.1" 2022-04-19
+Java(TM) SE Runtime Environment (build 18.0.1+10-24)
+Java HotSpot(TM) 64-Bit Server VM (build 18.0.1+10-24, mixed mode, sharing)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls 
+(*** Lists files and folders in current directory***)
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls -a
+(***list all fies and folders including the hidden folders***)
+./  ../  abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls -l
+(***lists all the files and folders in long format including read write and execute optionswith other information like date time and type of file***)
+total 15
+-rw-r--r-- 1 rapen 197609   0 May  2 09:29 abc.txt
+drwxr-xr-x 1 rapen 197609   0 May  2 09:19 Assignment1/
+-rw-r--r-- 1 rapen 197609 170 Apr 30 09:32 CopyFiles.sh
+-rw-r--r-- 1 rapen 197609   0 May  2 09:29 def.txt
+-rw-r--r-- 1 rapen 197609 165 May  2 08:30 hello.java
+drwxr-xr-x 1 rapen 197609   0 May  2 07:49 Practise/
+drwxr-xr-x 1 rapen 197609   0 May  1 16:04 QuickLinks/
+-rw-r--r-- 1 rapen 197609 134 Apr 26 10:54 script1.sh
+drwxr-xr-x 1 rapen 197609   0 Apr 30 09:44 Shell/
+drwxr-xr-x 1 rapen 197609   0 May  2 09:53 temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls ~
+(***List files and folders in Home directory***)
+'3D Objects'/
+ a.txt
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ BITA4F8.tmp
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Dropbox/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+ genymotion-logs-20210519-115008.zip
+ god/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ myapp/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{6b29831e-99d0-11eb-863f-86897e86d4ce}.TM.blf
+ NTUSER.DAT{6b29831e-99d0-11eb-863f-86897e86d4ce}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{6b29831e-99d0-11eb-863f-86897e86d4ce}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Tracing/
+ Untitled.ipynb
+ Untitled1.ipynb
+ Untitled2.ipynb
+ Untitled3.ipynb
+ Untitled4.ipynb
+ Untitled5.ipynb
+ Videos/
+'VirtualBox VMs'/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ cd ~
+(***Goes to home directory***)
+
+rapen@Pradnyas-laptop MINGW64 ~ (master)
+$ cd -
+(***come back to the earlier directory***)
+/c/Users/rapen/OneDrive/Desktop/shell_script
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls ..
+(***list files and folders in parent directory***
+ aim.mp4
+ automate-the-boring-stuff-with-python-2015-.pdf
+ code/
+'Coffee Break Python_ 50 Workouts to Kickstart Your Rapid Code Understanding in Python ( PDFDrive.com )(1).pdf'
+ data.py
+ desktop.ini
+ docu.pdf
+'Eclipse IDE for Java Developers - 2020-09.lnk'*
+ GNS3.lnk*
+'Harver System Checker.lnk'*
+'Microsoft Edge.lnk'*
+ RELAX/
+ Resume.pdf
+ sant.txt
+ script.sh*
+ shell_script/
+'Soft files'/
+ Vega.lnk*
+'Visual Studio Code.lnk'*
+'WHAT TO DO!!!.txt'
+'Where are my files.lnk'*
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls -al
+(***lists all files and folders in long format includig hidden files***)
+total 27
+drwxr-xr-x 1 rapen 197609   0 May  2 09:04 ./
+drwxr-xr-x 1 rapen 197609   0 May  2 09:11 ../
+-rw-r--r-- 1 rapen 197609   0 May  2 09:29 abc.txt
+drwxr-xr-x 1 rapen 197609   0 May  2 09:19 Assignment1/
+-rw-r--r-- 1 rapen 197609 170 Apr 30 09:32 CopyFiles.sh
+-rw-r--r-- 1 rapen 197609   0 May  2 09:29 def.txt
+-rw-r--r-- 1 rapen 197609 165 May  2 08:30 hello.java
+drwxr-xr-x 1 rapen 197609   0 May  2 07:49 Practise/
+drwxr-xr-x 1 rapen 197609   0 May  1 16:04 QuickLinks/
+-rw-r--r-- 1 rapen 197609 134 Apr 26 10:54 script1.sh
+drwxr-xr-x 1 rapen 197609   0 Apr 30 09:44 Shell/
+drwxr-xr-x 1 rapen 197609   0 May  2 09:53 temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ pwd
+(***shows current working directry***)
+/c/Users/rapen/OneDrive/Desktop/shell_script
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls Bash
+bash/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ rm -r Bash
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls -p | grep /
+(***using pipe to show all folders***)
+Assignment1/
+Practise/
+QuickLinks/
+Shell/
+Temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls -p | grep -v /
+(***using pipe to show all files***)
+abc.txt
+CopyFiles.sh
+def.txt
+hello.java
+script1.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ env
+(***Displaying Environment Variables***)
+USERDOMAIN=PRADNYAS-LAPTOP
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+CommonProgramW6432=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+LANG=en_US.UTF-8
+platformcode=KV
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=Pradnyas-laptop
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/etc/config.site
+EXEPATH=C:\Program Files\Git
+OnlineServices=Online Services
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=rapen
+ChocolateyInstall=C:\ProgramData\chocolatey
+LOGONSERVER=\\PRADNYAS-LAPTOP
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\rapen\AppData\Local
+COMPUTERNAME=PRADNYAS-LAPTOP
+!::=::\
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\rapen
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=PRADNYAS-LAPTOP
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+Py=C:\Users\rapen\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.8
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+OneDriveConsumer=C:\Users\rapen\OneDrive
+PWD=/c/Users/rapen/OneDrive/Desktop/shell_script
+SSH_ASKPASS=/mingw64/bin/git-askpass.exe
+HOME=/c/Users/rapen
+TMP=/tmp
+MSYSTEM_PREFIX=/mingw64
+OneDrive=C:\Users\rapen\OneDrive
+!C:=C:\Users\rapen\OneDrive\Desktop\shell_script
+PROCESSOR_REVISION=8e09
+TMPDIR=/tmp
+PROMPT=$P$G
+NUMBER_OF_PROCESSORS=4
+ProgramW6432=C:\Program Files
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+APPDATA=C:\Users\rapen\AppData\Roaming
+SHELL=/usr/bin/bash
+TERM=xterm-256color
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=1
+PLINK_PROTOCOL=ssh
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+PROGRAMFILES=C:\Program Files
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.3\bin;
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+RegionCode=APJ
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/Users/rapen/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/rapen/bin:/c/ProgramData/Anaconda3:/c/ProgramData/Anaconda3/Library/mingw-w64/bin:/c/ProgramData/Anaconda3/Library/usr/bin:/c/ProgramData/Anaconda3/Library/bin:/c/ProgramData/Anaconda3/Scripts:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/windows/system32:/c/windows:/c/windows/System32/Wbem:/c/windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/d/New folder/node:/cmd:/c/Users/rapen/AppData/Local/Programs/Python/Python310/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python310:/c/Users/rapen/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python39:/c/Users/rapen/AppData/Local/Programs/Python/Python38-32/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python38-32:/c/Users/rapen/AppData/Local/Microsoft/WindowsApps:/d/Users/rapen/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/rapen/AppData/Roaming/npm:/c/Program Files/JetBrains/PyCharm Community Edition 2021.2.3/bin:/usr/bin/vendor_perl:/usr/bin/core_perl
+PS1=\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132798776812514458
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\rapen
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/Users/rapen/bin:/c/ProgramData/Anaconda3:/c/ProgramData/Anaconda3/Library/mingw-w64/bin:/c/ProgramData/Anaconda3/Library/usr/bin:/c/ProgramData/Anaconda3/Library/bin:/c/ProgramData/Anaconda3/Scripts:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/windows/system32:/c/windows:/c/windows/System32/Wbem:/c/windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/d/New folder/node:/cmd:/c/Users/rapen/AppData/Local/Programs/Python/Python310/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python310:/c/Users/rapen/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python39:/c/Users/rapen/AppData/Local/Programs/Python/Python38-32/Scripts:/c/Users/rapen/AppData/Local/Programs/Python/Python38-32:/c/Users/rapen/AppData/Local/Microsoft/WindowsApps:/d/Users/rapen/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/rapen/AppData/Roaming/npm:/c/Program Files/JetBrains/PyCharm Community Edition 2021.2.3/bin
+VBOX_MSI_INSTALL_PATH=D:\Program Files\Oracle\VirtualBox\
+_=/usr/bin/env
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ env | grep USER
+(***using pipe to Grep User variable***)
+USERDOMAIN=PRADNYAS-LAPTOP
+USERNAME=rapen
+USERPROFILE=C:\Users\rapen
+USERDOMAIN_ROAMINGPROFILE=PRADNYAS-LAPTOP
+ALLUSERSPROFILE=C:\ProgramData

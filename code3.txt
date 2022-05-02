@@ -1,0 +1,68 @@
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ touch abc.txt def.txt
+(***touch command creates a file if it does not exist already***)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ ls
+(**we can see two empty txt files are creatwd**)
+abc.txt  def.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ ls -p
+abc.txt  def.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ ls *.txt
+abc.txt  def.txt
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ echo $file;
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Temp/Temp (master)
+$ for file in ls *.txt;
+(****Creating forloop.sh script file to copy txt files to resp dir****)
+> do
+> echo $file;
+> done
+ls
+abc.txt
+def.txt
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ cd Assignment1
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ touch ab.txt cd.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ nano copyFiles.sh
+(*****
+Using if condition to check folder exists
+then removing the folder along with the files
+Closing the if loop with fi
+****)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+$ chmod +x copyFiles.sh
+(***compiling file***)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script/Assignment1 (master)
+bash -x ./a.sh
+(***running .sh file****)
+++ ls ab.txt cd.txt
++ for file in `ls *.txt
++ echo ab.txt
+++ awk -F. '{print $1}'
++ folderName=ab
++ '[' -d ab ']'
++ mkdir ab
++ cp ab.txt ab
++ for file in `ls *.txt`
+++ echo cd.txt
+++ awk -F. '{print $1}'
++ folderName=cd
++ '[' -d cd ']'
++ mkdir cd
++ cp cd.txt cd
